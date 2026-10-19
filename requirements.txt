@@ -1,0 +1,24 @@
+accelerate==1.4.0
+codetiming==1.4.0
+dill==0.3.8
+flash_attn==2.7.4.post1
+hydra-core==1.3.7
+numpy==1.26.4
+openai==1.65.3
+pandas==2.2.3
+peft==0.14.0
+pyarrow==19.0.1
+ray==2.43.0
+sentencepiece==0.2.0
+tensordict==0.5.0
+tokenizers==0.21.0
+torch==2.4.0
+transformers==4.47.1
+vllm==0.6.3
+wandb==0.19.8
+xformers==0.0.27.post2
+
+# only needed to rebuild the training data (examples/data_preprocess/bow_corpus.py);
+# afterwards also run: python -m spacy download en_core_web_sm
+datasets==3.3.2
+spacy==3.7.5

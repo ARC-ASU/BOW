@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Credentials, caches and history files, in case HOME is ever pointed at this folder
+# (.netrc would hold the wandb API key)
+.netrc
+.cache/
+.config/
+.local/
+.nv/
+.triton/
+hub/
+.bash_history
+.python_history
+
+# Run outputs and model weights
+wandb/
+outputs/
+checkpoints/
+err_log/
+output_log/
+*.parquet
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Data: ignore everything under data/ except the training file the launch scripts use.
+# (Kept last, so this exception wins over *.parquet above.)
+/data/**
+!/data/**/
+!/data/bow/mystery_all_bow-bottleneck-thoughtv2-instruct_train_gpt4.1minifiltered.parquet
